@@ -14,3 +14,10 @@ results[result_1]=$result_1
 results[result_2]=$result_2
 results[result_3]=$result_3
 results[result_4]=$result_4
+
+count=0
+for result in ${results[@]}
+do
+	resultArr[(count++)]=$result
+done
+echo Original Array: ${resultArr[@]}
